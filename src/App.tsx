@@ -1,22 +1,20 @@
 import React from 'react';
 
-function App() {
+import light from './styles/themes/light';
+
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './styles/global';
+
+import Home from './screens/Home';
+
+const App = () => {
   return (
+    <ThemeProvider theme={light}>
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <GlobalStyle />
+      <Home />
     </div>
+    </ThemeProvider>
   );
 }
 
