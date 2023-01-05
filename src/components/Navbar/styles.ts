@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Nav = styled.nav `
+export const Nav = styled.header `
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -21,14 +21,24 @@ export const Container = styled.div `
     align-items: center;
 `
 
-export const Items = styled.div `
+export const Items = styled.nav `
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
 
-    a {
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    li {
+        cursor: pointer;
+        list-style-type: none;
         font-weight: bold;
         color: #1E255E;
         text-decoration: none;

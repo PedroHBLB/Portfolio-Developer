@@ -13,15 +13,21 @@ export const Intro = styled.div `
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    width: 50%;
-    height: 50%;
+    width: 70%;
 
-    p {
-        font-size: 20px;
-    }
-     
-    h1 {
-        font-size: 70px;
+    .first{
+        displays: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 63px;
+
+        p {
+            font-size: 20px;
+        }
+         
+        h1 {
+            font-size: 56px;
+        }
     }
 
     button {
@@ -34,6 +40,7 @@ export const Intro = styled.div `
         cursor: pointer;
         font-size: 16px;
         transition: all 0.5s ease-out;
+        margin-top: 30px;
 
         &:hover {
             transform: scale(1.1);

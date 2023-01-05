@@ -7,13 +7,14 @@ const Navbar: React.FC = () => {
             <h1>Pedro</h1>
             <Container>
                 <Items>
-                    <a href='#'>Home</a>
-                    <a href='#'>About me</a>
-                    <a href='#'>How it works</a>
-                    <a href='#'>Services</a>
-                    <a href='#'>Contact</a>
+                    <ul>
+                        <li>Home</li>
+                        <li>Sobre mim</li>
+                        <li>Cursos</li>
+                        <li>Contato</li>
+                    </ul>
                 </Items>
-                {/* <Button>Enquiry</Button> */}
+                <Button>Enquiry</Button>
             </Container>
         </Nav>
     );
