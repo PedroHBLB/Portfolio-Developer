@@ -7,6 +7,7 @@ const HomeRight: React.FC = () => {
     return(
         <Right>
             <img src={Rosto} alt='rosto' />
+            {/* <h1>FOTO</h1> */}
         </Right>
     );
 }

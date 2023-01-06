@@ -16,8 +16,6 @@ export const Intro = styled.div `
     width: 70%;
 
     .first{
-        displays: flex;
-        flex-direction: row;
         width: 100%;
         margin-bottom: 63px;
 
@@ -31,12 +29,12 @@ export const Intro = styled.div `
     }
 
     button {
-        background-color: #4649FF;
-        border: 1px solid #4649FF;
+        background-color: ${props => props.theme.colors.button};
+        border: 1px solid ${props => props.theme.colors.button};;
         border-radius: 11px;
         width: 130px;
         height: 56px;
-        color: #FFFF;
+        color: ${props => props.theme.colors.background};
         cursor: pointer;
         font-size: 16px;
         transition: all 0.5s ease-out;

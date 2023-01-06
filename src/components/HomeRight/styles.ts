@@ -8,6 +8,6 @@ export const Right = styled.div`
     justify-content: center;
 
     img {
-        width: 70%;
+        width: 31.25em;
     }
 `

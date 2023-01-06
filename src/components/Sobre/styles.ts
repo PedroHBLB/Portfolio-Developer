@@ -7,7 +7,7 @@ export const SobreMe = styled.div `
     width: 50%;
 
     h1 {
-        color: #1E255E;
+        color: ${props => props.theme.colors.text};
         font-size: 56px;
         font-weight: bold;
     }

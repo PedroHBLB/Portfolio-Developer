@@ -5,5 +5,5 @@ export default {
         background: '#F8FDFF',
         text: '#1E255E',
         button: '#4649FF',
-    }
-}
+    },
+};

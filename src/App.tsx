@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import light from './styles/themes/light';
+import dark from './styles/themes/dark';
 
 import { ThemeProvider } from 'styled-components';
 import GlobalStyle from './styles/global';
@@ -11,11 +12,17 @@ import Courses from './screens/Courses';
 import Contact from './screens/Contact';
 
 const App = () => {
+  const [theme, setTheme] = useState(light);
+
+  const toggleTheme = () => {
+      setTheme(theme.title === 'light' ? dark : light);
+  };
+
   return (
-    <ThemeProvider theme={light}>
+    <ThemeProvider theme={theme}>
     <div className="App">
       <GlobalStyle />
-      <Home />
+      <Home toggleTheme={toggleTheme}/>
       <About />
       <Courses />
       <Contact />

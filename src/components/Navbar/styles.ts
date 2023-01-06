@@ -7,32 +7,33 @@ export const Nav = styled.header `
     align-items: center;
     width: 100%;
     padding-top: 10px;
+    background-color: ${props => props.theme.colors.background};
 
     h1 {
-        color: #4649FF;
+        color: ${props => props.theme.colors.button};
         cursor: pointer;
     }
 `
 export const Container = styled.div `
     display: flex;
     flex-direction: row;
-    width: 35%;
+    width: 40%;
     justify-content: end;
     align-items: center;
+
+    img {
+        width: 10%;
+    }
 `
 
 export const Items = styled.nav `
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
 
     ul {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
+        gap: 2rem;
         width: 100%;
     }
 
@@ -40,13 +41,13 @@ export const Items = styled.nav `
         cursor: pointer;
         list-style-type: none;
         font-weight: bold;
-        color: #1E255E;
+        color: ${props => props.theme.colors.text};
         text-decoration: none;
     }
 
     @media (max-width: 768px) {
         flex-flow: column nowrap;
-        background-color: #4649FF;
+        background-color: ${props => props.theme.colors.button};
         position: fixed;
         top: 0;
         right: 0;
@@ -59,12 +60,12 @@ export const Items = styled.nav `
 export const Button = styled.button `
     width: 130px;
     height: 42px;
-    boder: 2px solid;
+    border: 2px solid;
     border-radius: 4px;
-    border-color: #4649FF;
+    border-color: ${props => props.theme.colors.button};
     background-color: transparent;
     cursor: pointer;
-    color: #4649FF;
+    color: ${props => props.theme.colors.button};
     text-decoration: none;
     transition: all 0.3s ease-out;
 
